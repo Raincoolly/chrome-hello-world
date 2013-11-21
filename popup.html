@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app ng-csp>
+	<head>
+		<title>1</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+		<style type="text/css">
+			html, body {
+				width: 300px;				
+			}
+
+			body {
+				margin: 20px 0;
+			}
+
+			.container {
+				width: 300px !important;
+			}
+
+			.page-header {
+				margin-top: 0;
+			}
+
+			.page-header h2 {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body ng-controller="CalculatorController">
+		<div class="container">
+			<div class="page-header">
+				<h2>Calculator <small>by loki2302</small></h2>
+			</div>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="a" class="col-xs-2 control-label">A</label>
+					<div class="col-xs-10">
+						<input type="text" id="a" class="form-control" ng-model="a">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="b" class="col-xs-2 control-label">B</label>
+					<div class="col-xs-10">
+						<input type="text" id="b" class="form-control" ng-model="b">
+					</div>
+				</div>
+				<code>Result is {{result()}}</code>
+			</form>
+		</div>
+
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
