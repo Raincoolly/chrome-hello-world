@@ -5,7 +5,11 @@ setInterval(function() {
 		'Here comes message text');
 	notification.show();
 
+	notification.onclick = function() {
+		notification.cancel();
+	};
+
 	setTimeout(function() {
 		notification.cancel();
-	}, 1000);
-}, 2000);
+	}, 3000);
+}, 5000);
